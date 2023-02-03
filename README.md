@@ -9,7 +9,7 @@ Clone dự án từ repository này. Sau đó chạy lệnh:
 
 Sau khi đã cài đặt các package bằng câu lệnh: npm install. Tiếp theo tạo file .env để thêm các biến môi trường. Nội dung file .env:
 
-### REACT_APP_API_ENDPOINT = http://localhost:5000/
+### `REACT_APP_API_ENDPOINT = http://localhost:5000/`
 
 Tiếp tục chạy câu lệnh dưới đây để chạy dự án trên local:
 
