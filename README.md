@@ -17,4 +17,5 @@ Tiếp tục chạy câu lệnh dưới đây để chạy dự án trên local:
 
 ## Link demo trên heroku:
 
-[Live Demo](https://luonggoldenshoe.herokuapp.com)
+Heroku không còn miễn phí, do không tìm được hosting golang miễn phí nên anh/chị vui lòng chạy project backend trên localhost, link demo sẽ tự lấy api từ localhost:5000
+[Live Demo](https://golden-owl-test-frontend.vercel.app/)
