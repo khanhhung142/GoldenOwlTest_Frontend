@@ -18,6 +18,23 @@ export default function Cart() {
     }
     return null
   }
+  if (cart) {
+    return (
+      <div className="card">
+        <div className="card__top">
+          <div>
+            <img className="card__top__logo" src="./assets/nike.png" alt="..." />
+          </div>
+          <div className='card__title'>Your cart
+            <span className='card__title__amount'>${renderPrice()}</span></div>
+        </div>
+        <div className="card__body">
+          {renderCartItem()}
+          {cart.map((item, index) => <CartItem key={index} item={item} />)}
+        </div>
+      </div>
+    )
+  }
   return (
     <div className="card">
       <div className="card__top">
@@ -28,8 +45,7 @@ export default function Cart() {
           <span className='card__title__amount'>${renderPrice()}</span></div>
       </div>
       <div className="card__body">
-        {renderCartItem()}
-        {cart.map((item, index) => <CartItem key={index} item={item} />)}
+        <p>Loading...</p>
       </div>
     </div>
   )

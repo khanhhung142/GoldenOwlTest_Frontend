@@ -1,7 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store } from './app/store';
+import rootReducer from './app/store';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
@@ -9,6 +11,8 @@ import './index.css';
 const container = document.getElementById('root');
 const root = createRoot(container);
 
+const middleware = applyMiddleware(thunk);
+const store = createStore(rootReducer, middleware);
 root.render(
   <React.StrictMode>
     <Provider store={store}>

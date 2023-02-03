@@ -1,10 +1,10 @@
-import { combineReducers, createStore } from 'redux';
-import {CartReducer} from './reducers/CartReducer';
-
+import { combineReducers } from 'redux';
+import { CartReducer } from './reducers/CartReducer';
+import { ShoesReducer } from './reducers/ShoesReducer';
 
 const rootReducer = combineReducers({
-    CartReducer
+  CartReducer,
+  ShoesReducer
 })
 
-
-export const store = createStore(rootReducer)
+export default rootReducer
